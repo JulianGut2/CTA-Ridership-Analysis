@@ -6,3 +6,7 @@ This project allows users to explore a dashboard of CTA ridership information an
 
 # Tools used
 
+- Streamlit
+
+- Pandas (EDA)
+
