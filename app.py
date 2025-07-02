@@ -51,3 +51,8 @@ with tab3:
     ax.set_ylabel("Month")
     ax.set_xlabel("Year")
     st.pyplot(fig)
+
+with tab4:
+    st.subheader("Key Insights & Takeaways")
+
+    top_days = df.sort_values(by = 'total_rides', ascending = False).head(3)
