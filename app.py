@@ -53,6 +53,10 @@ with tab3:
     st.pyplot(fig)
 
 with tab4:
+    # Introduce our new tab
     st.subheader("Key Insights & Takeaways")
 
+    # Lets get highest and lowest days of ridership
     top_days = df.sort_values(by = 'total_rides', ascending = False).head(3)
+
+    low_days = df[df['total_rides'] > 100_000].sort_values(by = 'total_rides').head(3)
